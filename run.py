@@ -25,7 +25,7 @@ def play(word):
             if guess in guessed_letters:
                 print("Letter has been already guessed", guess)
             elif guess not in word:
-                prin(guess, "is not in the word")
+                print(guess, "is not in the word")
                 attempt -= 1
                 guessed_letters.append(guess)
             else:
