@@ -15,3 +15,8 @@ def play(word):
     guessed_letters = []  # List that holds the letters that player guessed
     guessed_words = []  # List that holds the words that player guessed 
     attempt = 8  # Number of attempts
+    print("Let's play Hangman")  # Initial output to guide player when game starts
+    print(display_hangman(attemp))
+    print(word_completion)
+    print("\n")
+    
