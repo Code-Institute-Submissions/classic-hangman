@@ -19,6 +19,8 @@ def play(word):
     print(display_hangman(attempt))
     print(word_completion)
     print("\n")
+
+# While loop will run until word is guessed or user rans out of tries
     while not guessed and attempt > 0:
         guess = input("Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():  # Guessing a letter has length of 1 and contains only characters from alphabet
@@ -33,6 +35,11 @@ def play(word):
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                word_completion = "".join(word_as_list)
+                if "_" not in word_completion:
+                    guessed = True
         elif len(guess) == len(word) and guess.isalpha():  # Length of guess equals the length of word and contains only letters
 
         else:
