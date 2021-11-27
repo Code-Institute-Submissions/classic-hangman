@@ -2,28 +2,32 @@ import random
 from words import word_list
 
 
-# Function that returns word to game
 def get_word():
+    # Function that returns word to game
     word = random.choice(word_list)
     return word.upper()
 
 
-# Interactive game function
 def play(word):
+    # Interactive game function
     word_completion = "_" * len(word)
     guessed = False
-    guessed_letters = []  # List that holds the letters that player guessed
-    guessed_words = []  # List that holds the words that player guessed 
-    attempt = 8  # Number of attempts
-    print("Let's play Hangman")  # Initial output to guide player when game starts
+    # List that holds the letters that player guessed
+    guessed_letters = []
+    # List that holds the words that player guessed
+    guessed_words = []
+    attempt = 8
+    # Initial output to guide player when game starts
+    print("Let's play Hangman")
     print(display_hangman(attempt))
     print(word_completion)
     print("\n")
 
-# While loop will run until word is guessed or user rans out of tries
     while not guessed and attempt > 0:
+        # While loop will run until word is guessed or user rans out of tries
         guess = input("Please guess a letter or word: ").upper()
-        if len(guess) == 1 and guess.isalpha():  # Guessing a letter has length of 1 and contains only characters from alphabet
+        if len(guess) == 1 and guess.isalpha():
+            # Guessing a letter has length of 1 and contains only characters from alphabet
             if guess in guessed_letters:
                 print("Letter has been already guessed", guess)
             elif guess not in word:
@@ -40,10 +44,12 @@ def play(word):
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
-# Length of guess equals the length of word and contains only letters
+
         elif len(guess) == len(word) and guess.isalpha():
+            # Length of guess equals the length of word and contains only letters
             if guess in guessed_words:
                 print("You already guessed the word", guess)
+            elif guess != word:
                 print(guess, "is not the word")
                 attempt -= 1
                 guessed_words.append(guess)
@@ -52,17 +58,80 @@ def play(word):
                 word_completion = word
         else:
             print("Not a valid guess")
-            print(display_hangman(attempt))
-            print(word_completion)
-            print("\n")
+        print(display_hangman(attempt))
+        print(word_completion)
+        print("\n")
     if guessed:
         print("Congrats, word has been guessed. You won")
     else:
-        print("Sorry you lost. The word was " + word + ". Better luck next time)
+        print("Sorry you lost. The word was " + word + ". Better luck next time")
 
-# Function that shows current level of hangman at each attempt
+
 def display_hangman(attempt):
+    # Function that shows current level of hangman based of each attempt
     levels = [
-
+        """
+                   --------
+                   |      |
+                   |      O
+                   |     \\|/
+                   |      |
+                   |     / \\
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \\|/
+                   |      |
+                   |     / 
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \\|/
+                   |      |
+                   |      
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \\|
+                   |      |
+                   |     
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      O
+                   |      |
+                   |      |
+                   |     
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      O
+                   |    
+                   |      
+                   |     
+                   -
+                """,
+                """
+                   --------
+                   |      |
+                   |      
+                   |    
+                   |      
+                   |     
+                   -
+                """
     ]
     return levels[attempt]
