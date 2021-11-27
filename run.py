@@ -22,7 +22,6 @@ def play(word):
     print(display_hangman(attempt))
     print(word_completion)
     print("\n")
-
     while not guessed and attempt > 0:
         # While loop will run until word is guessed or user rans out of tries
         guess = input("Please guess a letter or word: ").upper()
@@ -136,12 +135,14 @@ def display_hangman(attempt):
     ]
     return levels[attempt]
 
+
 def main():
     word = get_word()
     play(word)
     while input("Play again? (Y/N) ").upper() == "Y":
         word = get_word()
         play(word)
+
 
 if __name__ == "__main__":
     main()
