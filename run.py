@@ -40,11 +40,19 @@ def play(word):
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
-        elif len(guess) == len(word) and guess.isalpha():  # Length of guess equals the length of word and contains only letters
-
+# Length of guess equals the length of word and contains only letters
+        elif len(guess) == len(word) and guess.isalpha():
+            if guess in guessed_words:
+                print("You already guessed the word", guess)
+                print(guess, "is not the word")
+                attempt -= 1
+                guessed_words.append(guess)
+            else:
+                guessed = True
+                word_completion = word
         else:
             print("Not a valid guess")
-        print(display_hangman(attempt))
-        print(word_completion)
-        print("\n")
+            print(display_hangman(attempt))
+            print(word_completion)
+            print("\n")
 
