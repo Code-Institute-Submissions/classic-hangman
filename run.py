@@ -55,4 +55,13 @@ def play(word):
             print(display_hangman(attempt))
             print(word_completion)
             print("\n")
+    if guessed:
+        print("Congrats, word has been guessed. You won")
+    else:
+        print("Sorry you lost. The word was " + word + ". Better luck next time)
 
+# Function that shows current level of hangman at each attempt
+def display_hangman(attempt):
+    levels = [
+
+    ]
