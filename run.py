@@ -65,3 +65,4 @@ def display_hangman(attempt):
     levels = [
 
     ]
+    return levels[attempt]
