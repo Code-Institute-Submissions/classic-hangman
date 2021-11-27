@@ -8,8 +8,8 @@ def get_word():
     return word.upper()
 
 
+# Interactive game function
 def play(word):
-    # Interactive game function
     word_completion = "_" * len(word)
     guessed = False
     # List that holds the letters that player guessed
@@ -26,7 +26,7 @@ def play(word):
         # While loop will run until word is guessed or user rans out of tries
         guess = input("Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
-            # Guessing a letter has length of 1 and contains only characters from alphabet
+            # Letter has length of 1 and contains only characters from alphabet
             if guess in guessed_letters:
                 print("Letter has been already guessed", guess)
             elif guess not in word:
@@ -69,7 +69,7 @@ def play(word):
 def display_hangman(attempt):
     # Function that shows current level of hangman based of each attempt
     levels = [
-        """
+                """
                    --------
                    |      |
                    |      O
@@ -84,7 +84,7 @@ def display_hangman(attempt):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 """,
                 """
@@ -93,7 +93,7 @@ def display_hangman(attempt):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 """,
                 """
@@ -102,7 +102,7 @@ def display_hangman(attempt):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 """
@@ -111,25 +111,25 @@ def display_hangman(attempt):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 """
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """
     ]
