@@ -156,29 +156,17 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 ---
 ## Credits
 
-**Media**
-* The site fonts were taken from [GoogleFonts](https://fonts.google.com/)
-* Footer Icons were sourced from [FontAwesome](https://fontawesome.com/)
-* Footer Icon colors was sourced from [Materialui](https://materialui.co/)
-* Website colors were sourced from [Coolors](https://coolors.co/)
-* Main control button icons were sourced from [Icons8](https://icons8.com/)
-* Favicon icon was sourced from [Flaticon](https://www.flaticon.com/)
-
-
 **Content**
 
 **Code**
-* [MDN](https://developer.mozilla.org/en-US/), [W3SCHOOLS](https://www.w3schools.com/), [STACKOVERFLOW](https://stackoverflow.com/), [TRAVERSY MEDIA](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [FREECODECAMP](https://www.youtube.com/c/Freecodecamp/videos), [PYTHONTUTOR](https://pythontutor.com/visualize.html#mode=edit)
-   were all used on daily basis, to better understand and write the code and it's structure.
+* [MDN](https://developer.mozilla.org/en-US/), [W3SCHOOLS](https://www.w3schools.com/), [STACKOVERFLOW](https://stackoverflow.com/), [TRAVERSY MEDIA](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [FREECODECAMP](https://www.youtube.com/c/Freecodecamp/videos), [PYTHONTUTOR](https://pythontutor.com/visualize.html#mode=edit),
+[DEV.TO](https://dev.to/), [KITE](https://www.youtube.com/c/KiteHQ/videos)
+
+   For me this was a part of new coding experience and this project was additional learning processs, with enormous help of all mentioned resources above that were used on daily basis, i was able to better understand and write the code and it's structure. I used tutorial lesson as a learning process for creating while loop and adding visual stages to hangman [KITE](https://www.youtube.com/c/KiteHQ/videos).
 
 * This readme document was based on research on several readme documents such as the Code Institute's readme [Sample](https://github.com/Code-Institute-Solutions/SampleREADME).
 
-* I used the lessons learned during the Code Institute "Love Running" project to help with the structure of contact form.
-
-* I used tutorial lesson for creating special hover/color effect on footer icons from [Easy WebCode](https://www.youtube.com/c/EasyWebCode/featured)
-
-* I used tutorial lesson to create Modal from [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
-
+* I used the lessons learned during the Code Institute "Love Sandwiches" project to better understand the code.
 
 
 **Acknowledgements**

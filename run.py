@@ -24,6 +24,7 @@ def play(word):
     print("\n")
     while not guessed and attempt > 0:
         # While loop will run until word is guessed or user rans out of tries
+        # Code Credit goes to Kite from youtube
         guess = input("Guess a hidden letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             # Letter has length of 1 and contains only characters from alphabet
@@ -65,7 +66,8 @@ def play(word):
 
 
 def display_hangman(attempt):
-    # Function that shows current level of hangman based of each attempt
+    # Function that shows current graphic of hangman based of each attempt
+    # Code Credit goes to Kite from youtube
     levels = [
                 """
                    --------
@@ -135,6 +137,7 @@ def display_hangman(attempt):
 
 
 def main():
+    # Runs the game
     word = get_word()
     play(word)
     while input("Play again? (Y/N) ").upper() == "Y":
