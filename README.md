@@ -3,26 +3,34 @@ Hangman is a Python terminal game, which runs in the Code Institue mock terminal
 
 Players try to guess the letters of the hidden word before they ran out of lives.
 
-![1responsive.png](assets/images/1responsive.png)
+![responsive.png](documentation/images/responsive.png)
 
 ---
 
+## How to play
+
+Classic hangman is very intuitive and fun game. In this game user will easily start a game by just typing first letter. If user guesses a letter thats in the word it will display in terminal on the line, if user doesn't guess a word terminal will show a head of hangman as a first sign of wrong letter guessing. At the end of the game user can choose to play again or not.
+
+---
+
+
+
 ## UX User Experience
 
-**User Stories Testing**
+**User Goals**
+* As a user i want to have fun with game.
+* As a user i want the game to be challenging.
 
-**As a user, I want to be able to quickly understand game rules.**
-* The user should be able to see and click on red button "Game rules" to read the simple game rules.
+**User Stories**
 
-**As a user, I want to easily find corresponding buttons that i need to press.**
-* The user should be able to see three square buttons on the center of the screen, buttons are clearly marked and identifiable.
+**As a user, I want the game to be intuitive.**
+* The user should be able to understand easy game steps by just typing guessing letters.
 
-**As a user, I want to find relevant social media links on the website.**
-* The user should be able to see at the center bottom of the page 4 link buttons with additional hover/changing color effect for opening external social media links in new page.
+**As a user, I want to quickly start the game.**
+* The user should be able to see message "Guess ahidden letter or word:" and easily start the game.
 
-**As a user, I would like to be able to reset score on the score board.**
-* The user should be able to see and click on red button "Reset Score" to reset both scores of Human and Machine.
-
+**As a user, I would like to be able to choose if i want to play a new game or not.**
+* The user should be able to see at the end of game option Play Again? (Y/N).
 
 
 **Project Goal**
@@ -30,94 +38,54 @@ Players try to guess the letters of the hidden word before they ran out of lives
 * The main goal of this project is to make minimum design game that will be easy, simple and quick to play for all age groups.
 ---
 
-## Design
-
-**Color Scheme**
-
-![2colors.png](assets/images/2colors.png)
-
-* Colors were sourced from [Coolors](https://coolors.co/)
-* To achieve good contrast only 4 colours were used: #FECCC3, #000000, #CD201F, #FFFFFF.
-
----
-
-**Typography**
-
-* The main font used in the site is "Orbitron", with backup font "Roboto" in case Orbitron is not being imported correctly. Second font was suggested by Google Fonts.
-
----
-
-**Wireframes**
-
-**[Balsamiq](https://balsamiq.com/) has been used to showcase the concept of the website.**
-
-**Desktop version**
-
-![3wire.png](assets/images/3wire.png)
-
-**Mobile and Tablet version**
-
-![4wire.png](assets/images/4wire.png)
-
----
 ## Features
 
-**Header**
-![5header.png](assets/images/5header.png)
-* Featured at the top center of the page shows the game name: Rock Paper Scissors
+**Existing features**
 
-**Footer**
-![6footer.png](assets/images/6footer.png)
-* The footer has been simplify with the background color black.
-* Footer contains 4 clickable social media icons with additional animation when hover over.
-* Icons are opening in new tab.
+* Welcome screen
+* Accept user inputs
 
-**Controls**
-![7controls.png](assets/images/7controls.png)
-* Three buttons displaying options of Rock Paper or Scissors.
+![feature1.png](documentation/images/feature1.png)
 
-**Score Board**
-![8score.png](assets/images/8score.png)
-* Score board contains actual score between Human and Machine.
-* The result score is clear to user, making the game easy to understand who won and who lost.
+* Shows when user didn't guess letter
 
-**Game result**
-![9result.png](assets/images/9result.png)
-![10result.png](assets/images/10result.png)
-![11result.png](assets/images/11result.png)
-* The result paragraph is clear to user, explaining each time in text what defeats what or is it a draw, Example: Paper beats Rock.
-* The result paragraph shows message You won and You lost or Keep it draw.
+![feature2.png](documentation/images/feature2.png)
 
-**Selection message**
-![15selection.png](assets/images/15selection.png)
-* Make your selection message located below main control buttons shows user a message that encourage user to start a game.
+* Shows when user already guessed same letter
 
-**Game Rules - Button**
-![12button.png](assets/images/12button.png)
-![13window.png](assets/images/13window.png)
-* Game Rules button contains Simple Game Rules information, once clicked it opens a small window with game rules.
+![feature3.png](documentation/images/feature3.png)
 
-**Reset Score - Button**
-![14reset.png](assets/images/14reset.png)
-* Reset Score button once clicked resets both the Human and Machine score.
+* Game shows to user new parts of hangman each time user doesn't guess a letter
+
+![feature4.png](documentation/images/feature4.png)
+
+* In case the user lost, game will show actual hidden word, wish user "Good luck next time and it will offer user with option to play game again
+
+![feature5.png](documentation/images/feature5.png)
+
+---
+
+**Future Features**
+
+* Different levels of difficulty
+* Add scoring system
+* Add option for player name input
+
 ---
 
 ## Technologies Used
 
 **Languages used**
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [CSS3](https://en.wikipedia.org/wiki/CSS)
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 **Programs used**
 * [GitHub](https://github.com/) Github was used to store the project.
 * [GitPod](https://www.gitpod.io/) GitPod was used for writing code.
-* [GoogleFonts](https://fonts.google.com/) Google Fonts was used to import the fonts "Orbitron" and "Roboto" into the style.css.
-* [FontAwesome](https://fontawesome.com/) Font Awesome was used to add icons to footer of website.
-* [ChromeDeVTools](https://developer.chrome.com/docs/devtools/) Chrome Dev Tools used during development of website and to test responsiveness.
-* [W3C HTML Validator](https://validator.w3.org/nu/) W3C HTML Validator was used to validate HTML Code.
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) W3C CSS Validator was used to validate CSS Code.
-* [JSHINT Validator](https://jshint.com/) JSHINT Validator was used to check for errors in code.
+* [Heroku](https://www.heroku.com/) Heroku was used to deploy project.
+* [PEP8online](http://pep8online.com/) PEP8online Validator was used to check for errors in code.
+
+**Libraries**
+* random was used to select a random word.
 
 ---
 ## Testing
