@@ -18,13 +18,13 @@ def play(word):
     guessed_words = []
     attempt = 6
     # Initial output to guide player when game starts
-    print("Play Hangman")
+    print("Let's play CLASSIC HANGMAN")
     print(display_hangman(attempt))
     print(word_completion)
     print("\n")
     while not guessed and attempt > 0:
         # While loop will run until word is guessed or user rans out of tries
-        guess = input("Guess a letter or word: ").upper()
+        guess = input("Guess a hidden letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             # Letter has length of 1 and contains only characters from alphabet
             if guess in guessed_letters:
@@ -59,9 +59,9 @@ def play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("Congrats, word has been guessed. You won")
+        print("Word has been guessed. You won")
     else:
-        print("Sorry you lost. The word was " + word + ". Good luck next time")
+        print("You lost. The word was " + word + ". Good luck next time")
 
 
 def display_hangman(attempt):
