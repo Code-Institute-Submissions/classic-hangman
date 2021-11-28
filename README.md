@@ -9,7 +9,7 @@ Players try to guess the letters of the hidden word before they ran out of lives
 
 ## How to play
 
-Classic hangman is very intuitive and fun game. In this game user will easily start a game by just typing first letter. If user guesses a letter thats in the word it will display in terminal on the line, if user doesn't guess a word terminal will show a head of hangman as a first sign of wrong letter guessing. At the end of the game user can choose to play again or not.
+Classic hangman is very intuitive and fun game. In this game user will easily start a game by just typing first letter. If user guesses a letter that's in the word it will display in terminal on the line, if user doesn't guess a word terminal will show a head of hangman as a first sign of wrong letter guessing. At the end of the game user can choose to play again or not.
 
 ---
 
@@ -153,7 +153,7 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 * Heroku will now deploy the site
 
 ---
----
+
 ## Credits
 
 **Content**
