@@ -27,7 +27,7 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 * The user should be able to understand easy game steps by just typing guessing letters.
 
 **As a user, I want to quickly start the game.**
-* The user should be able to see message "Guess ahidden letter or word:" and easily start the game.
+* The user should be able to see message "Guess a hidden letter or word:" and easily start the game.
 
 **As a user, I would like to be able to choose if i want to play a new game or not.**
 * The user should be able to see at the end of game option Play Again? (Y/N).
@@ -100,17 +100,11 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 
 ![pep8.png](documentation/images/pep8.png)
 
+**On second testing trough the** [PEP8online](http://pep8online.com/) No errors were shown after i fixed error on line 40 "line to long".
+
+![pep8correct.png](documentation/images/pep8correct.png)
+
 ---
----
-
-## Unresolved bugs
-
-**PEP8online shows 1 error in console**
-* I was unable to resolve this error.
-
-
-**Gitpod is showing 6 additional problems including 1 error from PEP8**
-![problem.png](documentation/images/problem.png)
 
 ---
 
@@ -121,6 +115,7 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 * Continuation line unaligned for hanging indent
 * line to long [66,80]
 * Line to long [48,80]
+* Line to long [40,80]
 ---
 ![problem2.png](documentation/images/problem2.png)
 
@@ -130,7 +125,13 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 ---
 ![problem4.png](documentation/images/problem4.png)
 
+
 ---
+![problem.png](documentation/images/problem.png)
+
+
+---
+![problem5.png](documentation/images/problem5.png)
 
 
 
@@ -156,13 +157,11 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 
 ## Credits
 
-**Content**
-
 **Code**
 * [MDN](https://developer.mozilla.org/en-US/), [W3SCHOOLS](https://www.w3schools.com/), [STACKOVERFLOW](https://stackoverflow.com/), [TRAVERSY MEDIA](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [FREECODECAMP](https://www.youtube.com/c/Freecodecamp/videos), [PYTHONTUTOR](https://pythontutor.com/visualize.html#mode=edit),
 [DEV.TO](https://dev.to/), [KITE](https://www.youtube.com/c/KiteHQ/videos)
 
-   For me this was a part of new coding experience and this project was additional learning processs, with enormous help of all mentioned resources above that were used on daily basis, i was able to better understand and write the code and it's structure. I used tutorial lesson as a learning process for creating while loop and adding visual stages to hangman [KITE](https://www.youtube.com/c/KiteHQ/videos).
+   For me this was a part of new coding experience and this project was additional learning processs, with enormous help of all mentioned resources above that were used on daily basis, i was able to better understand and write the code and it's structure. I used tutorial lesson as a learning process for creating while loop, adding visual stages to hangman, and creating functions from [KITE](https://www.youtube.com/c/KiteHQ/videos).
 
 * This readme document was based on research on several readme documents such as the Code Institute's readme [Sample](https://github.com/Code-Institute-Solutions/SampleREADME).
 
