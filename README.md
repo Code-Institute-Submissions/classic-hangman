@@ -90,43 +90,47 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 ---
 ## Testing
 
-* I completed testing of the website page in multiple browsers: Brave, Chrome, Firefox and also used DevTools to confirm that the project is responsive and functional.
-* I tested the website on different devices and operating systems Laptop (Windows), Tablet Samsung Galaxy Tab A (Android), and Galaxy Note 20 Ultra 5G (Android). The website worked perfectly on all devices.
+* Code has been tested through [PEP8](http://pep8online.com/)
 * The Website was successfuly tested on [ResponsiveDesign](http://ami.responsivedesign.is/#)
+* Manually tested user inputs by inputing incorrect data to confirm error messages were capturing wrong inputs.
 
 **Validator Testing**
 
-**No errors were returned when passing through the** [W3C HTML Validator](https://validator.w3.org/nu/)
+**1 error was returned when passing through the** [PEP8online](http://pep8online.com/)
 
-![19html-validator.png](assets/images/19html-validator.png)
-
-**No errors were returned when passing through the** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-
-![18css-validator.png](assets/images/18css-validator.png)
-
-**No errors were returned when passing through the** [JSHINT Validator](https://jshint.com/)
-
-![20js-validator.png](assets/images/20js-validator.png)
+![pep8.png](documentation/images/pep8.png)
 
 ---
-
-**Lighthouse Reports**
-
-**Lighthouse report for mobile**
-
-![16lighthouse-mobile.png](assets/images/16lighthouse-mobile.png)
-
-**Lighthouse report for desktop**
-
-![17lighthouse-desktop.png](assets/images/17lighthouse-desktop.png)
-
 ---
 
 ## Unresolved bugs
 
-**Google chrome dev tools shows 1 error in console**
+**PEP8online shows 1 error in console**
+* I was unable to resolve this error.
 
-* Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.
+
+**Gitpod is showing 6 additional problems including 1 error from PEP8**
+![problem.png](documentation/images/problem.png)
+
+---
+
+## Fixed errors
+**I was able to resolve:** 
+* Trailing whitespace error
+* Expected an intented block(comment)
+* Continuation line unaligned for hanging indent
+* line to long [66,80]
+* Line to long [48,80]
+---
+![problem2.png](documentation/images/problem2.png)
+
+---
+![problem3.png](documentation/images/problem3.png)
+
+---
+![problem4.png](documentation/images/problem4.png)
+
+---
 
 
 
@@ -134,36 +138,19 @@ Classic hangman is very intuitive and fun game. In this game user will easily st
 ---
 ## Deployment
 
+**The project was deployed using Code Institutes mock terminal for Heroku**
 
-**GitHub Pages**
-
-The live deployed site can be viewed here [rock-paper-scissors](https://sirjarvis.github.io/rock-paper-scissors/)
-
-**The site was deployed to Github pages** 
-> These are the steps to deploy this project:
-* Login to Github and go into repository [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors)
-* Click on settings and scroll down to Pages section on the page
-* Under the source heading select the master branch option and click save
-* The project has now been deployed and wait for approximate 10 minutes for the link to become active
-* Refresh the page and click on the link to view the live site.
-**Forking The Github Repository**
-
-> By forking the GitHub repository, we create a clone of the original repository in our Github account. This allows us to make modifications to the files without affecting the original repository.
-These are the steps:
-* Please sign in to your GitHub account.
-* Locate the repository to be duplicated, in this case [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors).
-* Locate and click the “Fork” button at the top of the [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors) repository page.
-* This creates a copy of the repository in our account, allowing us to make modifications.
-**Making A Local Clone**
-
-* Please sign in to your GitHub account.
-* Locate the desired repository in this case [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors).
-* Locate the “Code” button at the top of the [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors)   repository page. Click it and copy the HTTPS link that appears.
-* Activate your local IDE terminal.
-* Change the current working directory to the location where you wish the cloned file to be saved.
-* In the terminal, type “git clone” and then paste the link copied from HTTPS.
-* e.g "git clone [SirJarvis/rock-paper-scissors](https://github.com/SirJarvis/rock-paper-scissors)
-* Clone has been made once you press enter.
+**Deployment steps:**
+* Fork or clone this repository
+* requirements.txt can be left empty as this project does not use any external libraries
+* Create a new app in [Heroku](https://www.heroku.com/)
+* Select "New" and "Create new app"
+* In "Settings" select "BuildPack" and select Python and Node.js. (Python must be at the top of the list)
+* While still in "Settings", click "Reveal Config Vars" and input the following. KEY: PORT, VALUE: 8000. Nothing else is needed here as this project does not have any sensitive files.
+* Click on "Deploy" and select your deploy method and repository
+* Click "Connect" on selected repository
+* Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section
+* Heroku will now deploy the site
 
 ---
 ---
