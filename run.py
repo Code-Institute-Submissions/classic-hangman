@@ -16,7 +16,7 @@ def play(word):
     guessed_letters = []
     # List that holds the words that player guessed
     guessed_words = []
-    attempt = 8
+    attempt = 6
     # Initial output to guide player when game starts
     print("Play Hangman")
     print(display_hangman(attempt))
@@ -43,11 +43,9 @@ def play(word):
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
-
         elif len(guess) == len(word) and guess.isalpha():
-            # Length of guess equals the length of word and contains only letters
             if guess in guessed_words:
-                print("You already guessed the word", guess)
+                print("Word is already guessed", guess)
             elif guess != word:
                 print(guess, "is not the word")
                 attempt -= 1
@@ -63,7 +61,7 @@ def play(word):
     if guessed:
         print("Congrats, word has been guessed. You won")
     else:
-        print("Sorry you lost. The word was " + word + ". Better luck next time")
+        print("Sorry you lost. The word was " + word + ". Good luck next time")
 
 
 def display_hangman(attempt):
