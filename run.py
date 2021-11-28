@@ -18,13 +18,13 @@ def play(word):
     guessed_words = []
     attempt = 8
     # Initial output to guide player when game starts
-    print("Let's play Hangman")
+    print("Play Hangman")
     print(display_hangman(attempt))
     print(word_completion)
     print("\n")
     while not guessed and attempt > 0:
         # While loop will run until word is guessed or user rans out of tries
-        guess = input("Please guess a letter or word: ").upper()
+        guess = input("Guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             # Letter has length of 1 and contains only characters from alphabet
             if guess in guessed_letters:
